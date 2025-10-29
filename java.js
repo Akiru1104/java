@@ -377,17 +377,17 @@
 
 // console.log("Urvuu too", reversed);
 
-#1-19 Тоо сөрөг бол эерэг болгож, эерэг бол хэвээр үлдээх
+// #1-19 Тоо сөрөг бол эерэг болгож, эерэг бол хэвээр үлдээх
 
-// const num = -30;
+// // const num = -30;
 
-// if (num < 0) {
-//   console.log(-num);
-// } else {
-//   console.log(num);
-// }
+// // if (num < 0) {
+// //   console.log(-num);
+// // } else {
+// //   console.log(num);
+// // }
 
-#1-20 1970.01.01 -ээс яг одоог хүртэл хэдэн он, сар, өдөр, цаг, минут, секунд, дооль, милисекунд өнгөрсөнг ол
+// #1-20 1970.01.01 -ээс яг одоог хүртэл хэдэн он, сар, өдөр, цаг, минут, секунд, дооль, милисекунд өнгөрсөнг ол
 
 // const now = new Date();
 // const start = new Date(1970, 0, 1);
@@ -406,9 +406,9 @@
 // console.log("tsag:", hours);
 // console.log("minute:", minutes);
 // console.log("sec:", seconds);
-// console.log("milsec:", milliseconds);
+// console.log("milsec:", milliseconds);q
 
-#1-21 Дугаарын хязгаарлалтаар машин чинь хэд хэд дэх өдөр явахгүйг хэвлэнэ
+// #1-21 Дугаарын хязгаарлалтаар машин чинь хэд хэд дэх өдөр явахгүйг хэвлэнэ
 
 // const carnumber = 2690;
 
@@ -580,4 +580,32 @@
 
 // #2 Өгөгдсөн 3 тоогоор талаа хийсэн гурвалжинг байгуулж болох бол YES үгүй бол NO гэж хэвлэ. (Example: 3 4 5, Result: YES)
 
+// const a = 7;
+// const b = 40;
+// const c = 5;
+
+// if (a + b > c && a + c > b && b + c > a) {
+//   console.log("YES");
+// } else {
+//   console.log("NO");
+// }
+
 // #3 Долоо хоногийн дугаар өгөгдөхөд харгалзах гарагийг англиар хэвлэ. Эхний үсгийг л томоор бичнэ. (Example: 5: Result: Friday)
+
+const numb = 5;
+
+if (numb === 1) {
+  console.log("Monday");
+} else if (numb === 2) {
+  console.log("Tuesday");
+} else if (numb === 3) {
+  console.log("Wednesday");
+} else if (numb === 4) {
+  console.log("Thursday");
+} else if (numb === 5) {
+  console.log("Friday");
+} else if (numb === 6) {
+  console.log("Saturday");
+} else if (numb === 7) {
+  console.log("Sunday");
+}
