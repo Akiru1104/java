@@ -379,13 +379,13 @@
 
 // #1-19 Тоо сөрөг бол эерэг болгож, эерэг бол хэвээр үлдээх
 
-// // const num = -30;
+// const num = -30;
 
-// // if (num < 0) {
-// //   console.log(-num);
-// // } else {
-// //   console.log(num);
-// // }
+// if (num < 0) {
+//   console.log(-num);
+// } else {
+//   console.log(num);
+// }
 
 // #1-20 1970.01.01 -ээс яг одоог хүртэл хэдэн он, сар, өдөр, цаг, минут, секунд, дооль, милисекунд өнгөрсөнг ол
 
@@ -592,20 +592,20 @@
 
 // #3 Долоо хоногийн дугаар өгөгдөхөд харгалзах гарагийг англиар хэвлэ. Эхний үсгийг л томоор бичнэ. (Example: 5: Result: Friday)
 
-const numb = 5;
+// const numb = 5;
 
-if (numb === 1) {
-  console.log("Monday");
-} else if (numb === 2) {
-  console.log("Tuesday");
-} else if (numb === 3) {
-  console.log("Wednesday");
-} else if (numb === 4) {
-  console.log("Thursday");
-} else if (numb === 5) {
-  console.log("Friday");
-} else if (numb === 6) {
-  console.log("Saturday");
-} else if (numb === 7) {
-  console.log("Sunday");
-}
+// if (numb === 1) {
+//   console.log("Monday");
+// } else if (numb === 2) {
+//   console.log("Tuesday");
+// } else if (numb === 3) {
+//   console.log("Wednesday");
+// } else if (numb === 4) {
+//   console.log("Thursday");
+// } else if (numb === 5) {
+//   console.log("Friday");
+// } else if (numb === 6) {
+//   console.log("Saturday");
+// } else if (numb === 7) {
+//   console.log("Sunday");
+// }
