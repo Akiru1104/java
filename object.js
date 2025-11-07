@@ -68,60 +68,314 @@
 
 // #6 90-с их оноотой оюутны нэрийг хэвлэ. students = [{name: "Бат", score: 85}, {name: "Сара", score: 92}]
 
-const students = [
-  { name: "Бат", score: 85 },
-  { name: "Сара", score: 92 },
-];
-let name = [];
+// const students = [
+//   { name: "Бат", score: 85 },
+//   { name: "Сара", score: 92 },
+// ];
 
-for (let i = 0; i < students.length; i++) {
-  if (students[i].score > name.score) {
-    name = students[i];
-  }
-}
+// for (let i = 0; i < students.length; i++) {
+//   if (students[i].score > 90) {
+//     console.log(students[i].name);
+//   }
+// }
 
 // #7 stock нь 0 биш бүтээгдэхүүнийг ол. products = [{title: "Уут", stock: 5}, {title: "Сав", stock: 0}]
 
+// const products = [
+//   { title: "Уут", stock: 5 },
+//   { title: "Сав", stock: 0 },
+// ];
+
+// for (let i = 0; i < products.length; i++) {
+//   if (products[i].stock !== 0) {
+//     console.log(products[i].title);
+//   }
+// }
+
 // #8 Бүх цалингийн нийлбэр ол. employees = [{name: "Амгалан", salary: 1000}, {name: "Номин", salary: 1500}]
+
+// const employees = [
+//   { name: "Амгалан", salary: 1000 },
+//   { name: "Номин", salary: 1500 },
+// ];
+
+// let totalSalary = 0;
+
+// for (let i = 0; i < employees.length; i++) {
+//   totalSalary += employees[i].salary;
+// }
+
+// console.log("Нийт цалин:", totalSalary);
 
 // #9 2005 оноос хойш хэвлэгдсэн номыг ол. books = [{title: "Монгол түүх", year: 2000}, {title: "Газар зүй", year: 2010}]
 
+// const books = [
+//   { title: "Монгол түүх", year: 2000 },
+//   { title: "Газар зүй", year: 2010 },
+// ];
+
+// for (let i = 0; i < books.length; i++) {
+//   if (books[i].year > 2005) {
+//     console.log(books[i].title);
+//   }
+// }
+
 // #10 Насны дундажийг ол. students = [{name: "Бат", age: 20}, {name: "Сара", age: 22}]
 
+// const students = [
+//   { name: "Бат", age: 20 },
+//   { name: "Сара", age: 22 },
+// ];
+
+// let total = 0;
+
+// for (let i = 0; i < students.length; i++) {
+//   total += students[i].age;
+// }
+
+// const average = total / students.length;
+// console.log("Насны дундаж:", average);
+
 // #11 Бүх үнэ 10%-иар нэмэгдүүлсэн шинэ array үүсгэ. products = [{title: "Уут", price: 500}, {title: "Сав", price: 800}
+
+// const products = [
+//   { title: "Уут", price: 500 },
+//   { title: "Сав", price: 800 },
+// ];
+
+// let newPrices = [];
+// for (let i = 0; i < products.length; i++) {
+//   newPrices[i] = {
+//     title: products[i].title,
+//     price: Math.round(products[i].price * 1.1),
+//   };
+// }
+// console.log(newPrices);
+
+// [{title:"Уут",price:550},{title:"Сав",price:880}]
 
 // #12 students = [{name: "Бат", math: 85, english: 90, science: 95}, {name: "Сара", math: 92, english: 88, science: 100}]
 // Хамгийн өндөр үндсэн дүн (math + english + science) бүхий оюутны нэрийг ол.
 
+// const students = [
+//   { name: "Бат", math: 85, english: 90, science: 95 },
+//   { name: "Сара", math: 92, english: 88, science: 100 },
+// ];
+
+// let topStudent = students[0];
+// let topScore = students[0].math + students[0].english + students[0].science;
+
+// for (let i = 1; i < students.length; i++) {
+//   const total = students[i].math + students[i].english + students[i].science;
+//   if (total > topScore) {
+//     topScore = total;
+//     topStudent = students[i];
+//   }
+// }
+
+// console.log("Хамгийн өндөр дүнтэй оюутан:", topStudent.name, topScore);
+
 // #13 employees = [{name: "Амгалан", salary: 1000, bonus: 200, taxRate: 0.1}, {name: "Номин", salary: 1500, bonus: 300, taxRate: 0.2}]
 // Цалин + bonus - tax хамгийн их ажилтны нэрийг ол.
+
+// const employees = [
+//   { name: "Амгалан", salary: 1000, bonus: 200, taxRate: 0.1 },
+//   { name: "Номин", salary: 1500, bonus: 300, taxRate: 0.2 },
+// ];
+
+// let best = employees[0];
+// let bestNet =
+//   (employees[0].salary + employees[0].bonus) * (1 - employees[0].taxRate);
+
+// for (let i = 1; i < employees.length; i++) {
+//   const net =
+//     (employees[i].salary + employees[i].bonus) * (1 - employees[i].taxRate);
+//   if (net > bestNet) {
+//     best = employees[i];
+//     bestNet = net;
+//   }
+// }
+// console.log("Хамгийн их цэвэр орлого:", best.name, bestNet);
 
 // #14 products = [{title: "Уут", price: 500, sold: 10, discount: 0.1}, {title: "Сав", price: 800, sold: 5, discount: 0.2}]
 // Борлуулалтын нийт орлого (price * sold * (1 - discount)) хамгийн их бүтээгдэхүүнийг ол.
 
+// const products2 = [
+//   { title: "Уут", price: 500, sold: 10, discount: 0.1 },
+//   { title: "Сав", price: 800, sold: 5, discount: 0.2 },
+// ];
+
+// let topProd = products2[0];
+// let topRevenue =
+//   products2[0].price * products2[0].sold * (1 - products2[0].discount);
+
+// for (let i = 1; i < products2.length; i++) {
+//   const revenue =
+//     products2[i].price * products2[i].sold * (1 - products2[i].discount);
+//   if (revenue > topRevenue) {
+//     topProd = products2[i];
+//     topRevenue = revenue;
+//   }
+// }
+// console.log("Хамгийн их орлоготой бараа:", topProd.title, topRevenue);
+
 // #15 books = [{title: "Монгол түүх", pages: 120, year: 2000, rating: 4.5}, {title: "Газар зүй", pages: 150, year: 2010, rating: 4.8}]
 // Pages * rating хамгийн их утгатай номыг ол.
+
+// const books = [
+//   { title: "Монгол түүх", pages: 120, year: 2000, rating: 4.5 },
+//   { title: "Газар зүй", pages: 150, year: 2010, rating: 4.8 },
+// ];
+
+// let bestBook = books[0];
+// let bestScore = books[0].pages * books[0].rating;
+
+// for (let i = 1; i < books.length; i++) {
+//   const score = books[i].pages * books[i].rating;
+//   if (score > bestScore) {
+//     bestBook = books[i];
+//     bestScore = score;
+//   }
+// }
+// console.log(bestBook);
 
 // #16 students = [{name: "Бат", math: 70, english: 80, science: 90}, {name: "Сара", math: 60, english: 85, science: 95}, {name: "Наран", math: 100, english: 90, science: 80}]
 // Хамгийн их дүнтэй оюутны нэрийг ол.
 
+// const students = [
+//   { name: "Бат", math: 70, english: 80, science: 90 },
+//   { name: "Сара", math: 60, english: 85, science: 95 },
+//   { name: "Наран", math: 100, english: 90, science: 80 },
+// ];
+
+// let topStudent = students[0];
+// let topScore = students[0].math + students[0].english + students[0].science;
+
+// for (let i = 1; i < students.length; i++) {
+//   const total = students[i].math + students[i].english + students[i].science;
+//   if (total > topScore) {
+//     topScore = total;
+//     topStudent = students[i];
+//   }
+// }
+
+// console.log("Хамгийн их дүнтэй оюутан:", topStudent.name, topScore);
+
 // #17 employees = [{name: "Амгалан", salary: 1000, active: true, department: "IT"}, {name: "Номин", salary: 1500, active: false, department: "HR"}, {name: "Баяр", salary: 1200, active: true, department: "IT"}]
 // Active = true ажилтнуудын дундаж цалинг ол.
+
+// const employees17 = [
+//   { name: "Амгалан", salary: 1000, active: true, department: "IT" },
+//   { name: "Номин", salary: 1500, active: false, department: "HR" },
+//   { name: "Баяр", salary: 1200, active: true, department: "IT" },
+// ];
+
+// let sum = 0,
+//   count = 0;
+// for (let i = 0; i < employees17.length; i++) {
+//   if (employees17[i].active === true) {
+//     sum += employees17[i].salary;
+//     count++;
+//   }
+// }
+// const avg = count > 0 ? sum / count : 0;
+// console.log("Active ажилтны дундаж цалин:", avg);
 
 // #18 products = [{title: "Уут", price: 500, sold: 10, category: "Plastic"}, {title: "Сав", price: 800, sold: 5, category: "Metal"}, {title: "Савх", price: 600, sold: 12, category: "Plastic"}]
 // Category бүрийн нийт орлогыг ол.
 
+// const products = [
+//   { title: "Уут", price: 500, sold: 10, category: "Plastic" },
+//   { title: "Сав", price: 800, sold: 5, category: "Metal" },
+//   { title: "Савх", price: 600, sold: 12, category: "Plastic" },
+// ];
+
+// const revenue = {}; // { Plastic: ..., Metal: ... }
+
+// for (let i = 0; i < products.length; i++) {
+//   const p = products[i];
+//   const rev = p.price * p.sold;
+//   if (revenue[p.category] === undefined) {
+//     revenue[p.category] = rev;
+//   } else {
+//     revenue[p.category] += rev;
+//   }
+// }
+// console.log("Category-н орлого:", revenue);
+
 // #19 students = [{name: "Бат", math: 85, english: 90, science: 95}, {name: "Сара", math: 92, english: 88, science: 100}]
 // Нийт дүн 270-с их оюутны нэрийг ол.
+
+// const students = [
+//   { name: "Бат", math: 85, english: 90, science: 95 },
+//   { name: "Сара", math: 92, english: 88, science: 100 },
+// ];
+
+// for (let i = 0; i < students.length; i++) {
+//   const total = students[i].math + students[i].english + students[i].science;
+//   if (total > 270) {
+//     console.log(students[i].name, total);
+//   }
+// }
 
 // #20 books = [{title: "Монгол түүх", price: 1200, sold: 10, discount: 0.1}, {title: "Газар зүй", price: 1500, sold: 5, discount: 0.05}]
 // Total revenue хамгийн их номыг ол.
 
+// const books = [
+//   { title: "Монгол түүх", price: 1200, sold: 10, discount: 0.1 },
+//   { title: "Газар зүй", price: 1500, sold: 5, discount: 0.05 },
+// ];
+
+// let bestbook = books[0];
+// let bestrev = books[0].price * books[0].sold * (1 - books[0].discount);
+
+// for (let i = 1; i < books.length; i++) {
+//   const rev = books[i].price * books[i].sold * (1 - books[i].discount);
+//   if (rev > bestrev) {
+//     bestrev = rev;
+//     bestbook = books[i];
+//   }
+// }
+// console.log("Хамгийн их орлоготой ном:", bestbook.title, bestrev);
+
 // #21 employees = [{name: "Амгалан", salary: 1000, bonus: 200, department: "IT"}, {name: "Номин", salary: 1500, bonus: 300, department: "HR"}, {name: "Баяр", salary: 1200, bonus: 100, department: "IT"}]
 // Department = “IT” ажилтнуудын дундаж цалинг ол.
 
+// const employees = [
+//   { name: "Амгалан", salary: 1000, bonus: 200, department: "IT" },
+//   { name: "Номин", salary: 1500, bonus: 300, department: "HR" },
+//   { name: "Баяр", salary: 1200, bonus: 100, department: "IT" },
+// ];
+// let averagesalary = 0
+
+// for (let i=1; i<employees.length; i++ ){
+
+// const averagesalary = employees[i].department + employees[i].salary;
+// if (employees[i].department === "IT") {
+//   averagesalary += employees[i].salary
+//   console.log(employees[i].department + averagesalary);
+// }
+
+// }
+
 // #22 students = [{name: "Бат", math: 70, english: 80, science: 90}, {name: "Сара", math: 60, english: 85, science: 95}, {name: "Наран", math: 100, english: 90, science: 80}]
 // Хамгийн бага дүнтэй оюутны нэрийг ол.
+
+// const students = [
+//   { name: "Бат", math: 70, english: 80, science: 90 },
+//   { name: "Сара", math: 60, english: 85, science: 95 },
+//   { name: "Наран", math: 100, english: 90, science: 80 },
+// ];
+
+// let lower = "";
+// let averagescore = Infinity;
+
+// for (let i = 0; i < students.length; i++) {
+//   const lower = students[i].math + students[i].english + students[i].science;
+//   if (lower > 0) {
+//     console.log(students[i].name, lower);
+//   }
+// }
 
 // #23 products = [{title: "Уут", price: 500, sold: 10, discount: 0.1}, {title: "Сав", price: 800, sold: 5, discount: 0.2}, {title: "Савх", price: 600, sold: 12, discount: 0.15}]
 // Total revenue хамгийн бага бүтээгдэхүүнийг ол.
