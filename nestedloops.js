@@ -58,26 +58,27 @@
 
 // #5 Хоёр үг нь ижил үсгийн бүрдэлтэй (анаграмм) эсэхийг шалга. Жишээ: "listen" ба "silent" → true
 
-const a = "listen";
-const b = "silent";
-let wrong = false;
+// const a = "listen";
+// const b = "silent";
+// let wrong = false;
 
-if (a.length != b.length) {
-  wrong = false;
-} else {
-  for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < b.length; j++) {
-      if (a[i] === b[j]) {
-        wrong = true;
-        break;
-      }
-    }
-    if (!wrong) {
-      break;
-    }
-  }
-}
-console.log(wrong);
+// if (a.length != b.length) {
+
+//   wrong = false;
+// } else {
+//   for (let i = 0; i < a.length; i++) {
+//     for (let j = 0; j < b.length; j++) {
+//       if (a[i] === b[j]) {
+//         wrong = true;
+//         break;
+//       }
+//     }
+//     if (!wrong) {
+//       break;
+//     }
+//   }
+// }
+// console.log(wrong);
 
 // #6 Массив доторх хоёр элементийн нийлбэр нь өгөгдсөн target тоотой тэнцүү хосуудыг ол.
 
