@@ -14,9 +14,9 @@
 
 // #3 [1, 2, 3, 4] массиваас сүүлийн элементийг pop() ашиглан устга.
 
-const numbers = [1, 2, 3, 4];
-numbers.pop();
-console.log(numbers);
+// const numbers = [1, 2, 3, 4];
+// numbers.pop();
+// console.log(numbers);
 
 // #4 [10, 20, 30] массивын эхэнд 5 нэм.
 
